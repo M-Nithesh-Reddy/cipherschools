@@ -1,0 +1,11 @@
+Objects and Classes
+
+Objects - It is an instance of a class. It's a fundamental building block of object-oriented programming. 
+An object consists of data (in the form of fields, also known as attributes) and functions that operate on that data.
+
+Classes - It is a blueprint or template that defines the properties and behaviors of a object.
+Class can contain :
+                  -Fields
+                  -Methods
+                  -Constructors
+                  -Nested class an interface
