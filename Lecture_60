@@ -47,6 +47,38 @@ class Graph {
         }
         }
     }
+
+    void DFS(int s){
+        System.out.println("-----DFS------");
+        boolean visited[]= new boolean[v];
+        DFSUtil(s,visited);//utility /helper function to pass the same array to the recursive calls.
+        System.out.println();}
+    void DFSUtil(int s , boolean visited[])
+    {
+
+        System.out.println(s+" ");
+        visited[s] = true;
+        for(Integer x arr[s])//if neighbour not visited
+        {
+            if(!visited[x])//if neighbour not visited
+            {
+                DFS(X.visited);//DO DFS on the x
+            }
+        }
+        void DFSOverall(){
+        System.out.println("----DFS OVERALL");
+        boolean visited[] = new boolean[v];'
+    int  count =0;
+        for(int i=0;i<v;i++){
+            if(!visited[i])
+            {
+                DFSUtil(i,visited);
+                System.out.println();
+                count++;//whenever a new component found
+            }
+        }
+    }
+    }
 }
 public class GraphLL{-
     public static void main(String args[]){
@@ -59,5 +91,16 @@ public class GraphLL{-
     g.addEdge(2,4);
     g.addEdge(3,4);
    g.BFS(0);
+   g.BFS(1);
+   g.BFS(2);
+   g.BFS(3);
+   g.BFS(4);
+
+   g.DFS(0);
+   g.DFS(1);
+   
+   
+   
+   g.DFSOverall();
     }
 }
